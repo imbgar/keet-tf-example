@@ -140,9 +140,9 @@ resource "aws_instance" "docker-base" {
   iam_instance_profile = aws_iam_instance_profile.docker_base.name
 
   tags = {
-    project = var.project
+    project     = var.project
     environment = var.env
-    contact = var.contact
+    contact     = var.contact
   }
 
   monitoring              = true
