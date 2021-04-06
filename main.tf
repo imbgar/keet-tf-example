@@ -50,7 +50,7 @@ resource "aws_iam_role" "docker_base" {
 EOF
 
   tags = {
-    project = "hello-world"
+    project = var.project
   }
 }
 
